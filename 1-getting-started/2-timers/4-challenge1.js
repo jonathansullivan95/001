@@ -2,8 +2,11 @@ const theOneFunc = () => {};
 
 setTimeout(theOneFunc, 4 * 1000);
 
-// Hello after 4 seconds
+// Hello after 4/8 seconds
+const displayHello = howLong => {
+    console.log("Hello after " + howLong + " seconds!");
+};
 
-// Hello after 8 seconds
+setTimeout(displayHello, 4 * 1000, 4);
+setTimeout(displayHello, 8 * 1000, 8);
 
-// You can define only ONE function
